@@ -1,36 +1,52 @@
-<!doctype html>
+<!DOCTYPE html>
+<html>
+<style>
+input[type=text], select {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
 
-<html lang="en">
-<head>
-    <meta charset="utf-8">
+input[type=submit] {
+    width: 100%;
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
 
-    <title>The HTML5 Herald</title>
-    <meta name="description" content="The HTML5 Herald">
-    <meta name="author" content="SitePoint">
+input[type=submit]:hover {
+    background-color: #45a049;
+}
 
-    <!--[if lt IE 9]>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.js"></script>
-    <![endif]-->
-</head>
-
+div {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+}
+</style>
 <body>
-<h1> HSBC Handoff</h1>
-<form action="/bookAppointment.html">
-    First name:<br>
-    <input id="first_name" type="text" name="firstname">
-    <br>
-    Last name:<br>
-    <input id="last_name" type="text" name="lastname">
-    <br>
-    age:<br>
-    <input id="age" type="number" name="age">
-    <br>
-    Phone Number:<br>
-    <input id="phone_number" type="number" name="phonenumber">
-    <br>
+
+<h3>Using CSS to style an HTML Form</h3>
+
+<div>
+  <form action="/book_appointment.html">
+    <label for="fname">First Name</label>
+    <input type="text" id="first_name" name="firstname" placeholder="Your name..">
+
+    <label for="lname">Last Name</label>
+    <input type="text" id="last_name" name="lastname" placeholder="Your last name..">
+  
     <input type="submit" value="Submit">
-</form>
-<script src="fill.js"></script>
+  </form>
+</div>
 
 </body>
 </html>
