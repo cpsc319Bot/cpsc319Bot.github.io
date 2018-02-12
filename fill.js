@@ -23,12 +23,12 @@ if (firstName)
 if (lastName)
     document.getElementById('last_name').value = lastName;
 if(riskLevel)
-    document.getElementById('riskLevel').value = lastName;
+    document.getElementById('riskLevel').value = riskLevel;
 if(initialInvestment)
-    document.getElementById('initialInvestment').value = lastName;
+    document.getElementById('initialInvestment').value = initialInvestment;
 if(regularAmount)
-    document.getElementById('regularAmount').value = lastName;
+    document.getElementById('regularAmount').value = regularAmount;
 if(length)
-    document.getElementById('length').value = lastName;
+    document.getElementById('length').value = length;
 if(interval)
-    document.getElementById('interval').value = lastName;
+    document.getElementById('interval').value = interval;
